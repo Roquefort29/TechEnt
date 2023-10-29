@@ -58,28 +58,38 @@ body {
 
 /* Guest page classes */
 :root {
-    
+    --index: calc(1vw + 1vh);
 }
 .logotype {
-    width: 150px;
-    height: 150px;
+    width: var(--index);
+    height: var(--index);
     background-repeat: no-repeat;
     position: absolute;
 }
 .layers {
     perspective: 1000px;
+    overflow: hidden;
 }
 .layers__container {
     height: 100vh;
     transform-style: preserve-3d;
+    transform: rotateX(var(--move-y))  rotateY(var(--move-x));
 }
 .layers__item {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: -5vw;
     background-size: cover;
     background-position: center;
-    transform: rotateX(var(--move-x))  rotateY(var(--move-y));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layer-1 {
+    transform: translateZ(-40px) scale(1.2);
+}
+.layer-2 {
+    transform: translateZ(0);
+}
+.layer-3 {
+    transform: translateZ(30px);
 }

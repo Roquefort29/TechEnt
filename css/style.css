@@ -59,6 +59,7 @@ body {
 /* Guest page classes */
 :root {
     --index: calc(1vw + 1vh);
+    --transition: 1s cubic-bezier(.05, .5, 0, 1);
 }
 .logotype {
     width: var(--index);
@@ -74,6 +75,8 @@ body {
     height: 100vh;
     transform-style: preserve-3d;
     transform: rotateX(var(--move-y))  rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
 }
 .layers__item {
     position: absolute;

@@ -31,6 +31,9 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
+.logo:hover {
+    color:white;
+}
 
 .navbar a {
     position: relative;
@@ -39,6 +42,9 @@ body {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
+}
+.navbar a:hover {
+    color:white;
 }
 
 .navbar a::before {
@@ -193,6 +199,134 @@ h1 {
       }
 /* End */
 
+/* Login/Registration Pages */
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid(rgb(255, 255, 255, .5));
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    transition: height .2s ease;
+}
+.wrapper.active {
+    height: 520px;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box.login {
+    /* display: none; */
+}
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register {
+    position: absolute;
+    transform: translateX(400px);
+}
+.form-box h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(0, 0, 0, .5);
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2em;
+    color: white;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label{
+    accent-color: rgb(164, 35, 171);
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    color: rgb(197, 38, 205);
+    text-decoration: underline;
+    transition: .5s;
+}
+.btn-sign {
+    width: 100%;
+    height: 45px;
+    background: rgb(164, 35, 171);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+.login-register-link {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register-link p a:hover {
+    color: rgb(197, 38, 205);
+    text-decoration: underline;
+    transition: .5s;
+}
 /* End */
 
 /* OwnCustom Page */

@@ -361,3 +361,80 @@ img {
     z-index: 20px; /* Принт на переднем плане (поверх футболки) */
 }
 /* End */
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 55px;
+    font-weight: 900;
+    color: #d8f824;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-box #utext {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #c8d0ff;
+}
+
+.about-us{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-us h1 {
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 40px;
+    margin: 15px 0;
+    line-height: 50px;
+    text-align: center;
+    color: #f82424;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-us p {
+    color: rgb(102, 102, 102);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.a-row {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col {
+    top: 60%;
+    flex-basis: 31%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-top: 5%;
+}
+.about-col {
+    background: #fff3ff;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 23px;
+    box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}

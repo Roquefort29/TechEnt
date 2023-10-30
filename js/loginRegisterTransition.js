@@ -6,5 +6,5 @@ registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
 });
 loginLink.addEventListener('click', () => {
-    wrapper.classList.add('active');
+    wrapper.classList.remove('active');
 });

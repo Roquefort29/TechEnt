@@ -212,7 +212,8 @@ h1 {
     box-shadow: 0 0 30px rgb(0, 0, 0, .5);
     align-items: center;
     justify-content: center;
-    transition: height .2s ease;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(.05, .5, 0, 1);
 }
 .wrapper.active {
     height: 520px;
@@ -222,7 +223,8 @@ h1 {
     padding: 40px;
 }
 .wrapper .form-box.login {
-    /* display: none; */
+    transition: transform .2s ease;
+    transform: translateX(0);
 }
 .wrapper.active .form-box.login {
     transition: none;
@@ -230,7 +232,12 @@ h1 {
 }
 .wrapper .form-box.register {
     position: absolute;
+    transition: none;
     transform: translateX(400px);
+}
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 .form-box h2{
     font-size: 2em;

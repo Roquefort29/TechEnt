@@ -1,5 +1,5 @@
 const tshirt = document.getElementById("tshirt");
-const print = document.getElementById("print");
+const printed = document.getElementById("print");
 const fileInput = document.getElementById("file-input");
 const removeButton = document.getElementById("remove-button");
 
@@ -8,12 +8,12 @@ fileInput.addEventListener("change", (e) => {
     if (file) {
         const reader = new FileReader();
         reader.onload = (event) => {
-            print.src = event.target.result;
+            printed.src = event.target.result;
         };
         reader.readAsDataURL(file);
     }
 });
 
 removeButton.addEventListener("click", () => {
-    print.src = "";
+    printed.src = "";
 });

@@ -895,13 +895,22 @@
     right: 0;
     margin-top: 100px;
   }
-  
-  #canvas-container {
+
+  .tshirt-content-wrapper {
     position: relative;
-    margin-top: 100px;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+  #canvas-container {
+      position: relative;
+      margin-top: 100px; /* You may adjust this margin based on your design */
+      display: flex;
+      justify-content: center; /* Add this line to center the container */
+      align-items: center; /* Add this line to center the container */
   }
   
   #canvas {
@@ -934,7 +943,6 @@
     flex: 1;
   }
   
-  /* Дополнительные стили для отступа "Наверх" */
   .back-top-btn {
     bottom: 20px;
   }
@@ -942,7 +950,47 @@
   .back-top-btn.active {
     transform: translateY(0);
   }
-  
+
+  /**
+   * DESIGN TOOL
+   */
+   .container-profile{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .profile-box{
+    background: #efefef;
+    text-align: center;
+    padding: 40px 90px;
+    color: #000;
+    position: relative;
+    border-radius: 20px;
+   }
+   .profile-box img{
+    max-width: 200px;
+    max-height: 200px;
+   }
+   .profile-box h3{
+    color: black;
+   }
+   .profile-box p{
+    color: black;
+   }
+   .profile-bottom{
+    background: #000;
+    color: white;
+    padding: 60px 0;
+    margin-right: -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+   }
+
   /**
    * responsive for large than 1200px screen
    */
